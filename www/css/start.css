@@ -1,0 +1,69 @@
+/* This is a CSS file */
+
+@charset "utf-8";
+/*CSS Document*/
+
+.name {
+    color: white;
+    font-size: 6em;
+    padding-top: 50px;
+    padding-left: 45px; 
+    font-family: Georgia;
+    
+}    
+    /* 点滅 */
+.blink {
+	animation: blinking 1s ease-in-out infinite alternate;
+}
+ 
+@keyframes blinking {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.blink {
+    color: white;
+    padding-top: 150px;
+    padding-left: 50px; 
+
+}
+
+.but{
+    padding-top: 50px;
+    padding-left: 105px; 
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -50px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #f88dc8;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+.heart{
+   animation: pounding .5s linear infinite alternate;
+}
+ 
+@keyframes pounding{
+  0%{ transform: scale(1.6); }
+  100%{ transform: scale(1); }
+}
